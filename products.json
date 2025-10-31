@@ -1,0 +1,88 @@
+{
+  "products": [
+    {
+      "category": "Marshmallow",
+      "name_en": "3D Creative Marshmallow — Sakura",
+      "name_zh": "3D创意棉花糖—樱花",
+      "sellpoints_en": "0 fat · fluffy texture · lifelike sakura design.",
+      "sellpoints_zh": "零脂肪，绵软回弹，樱花造型高颜值。",
+      "weight": "40g/pc",
+      "pack": "12 pcs/inner, 12 inners/carton",
+      "shelf": "12 months",
+      "ean": "4897113206100",
+      "image": "assets/img/placeholder.png"
+    },
+    {
+      "category": "Marshmallow",
+      "name_en": "3D Creative Marshmallow — Donuts",
+      "name_zh": "3D创意棉花糖—甜甜圈",
+      "sellpoints_en": "Cute donut shapes, soft and springy.",
+      "sellpoints_zh": "甜甜圈造型，柔软不黏。",
+      "weight": "30g/pc",
+      "pack": "8 pcs/inner, 12 inners/carton",
+      "shelf": "12 months",
+      "ean": "—",
+      "image": "assets/img/placeholder.png"
+    },
+    {
+      "category": "Gummy",
+      "name_en": "Me Candy 4D Peelable Juice Gummy",
+      "name_zh": "Me Candy 4D 可剥果汁软糖",
+      "sellpoints_en": "Real juice & jam; 0 fat; individual packs.",
+      "sellpoints_zh": "真果汁夹心，零脂肪，独立小包装。",
+      "weight": "155g box",
+      "pack": "24 boxes/carton",
+      "shelf": "12 months",
+      "ean": "4897113203710",
+      "image": "assets/img/placeholder.png"
+    },
+    {
+      "category": "Gummy",
+      "name_en": "99 Juice Gummy Candy",
+      "name_zh": "99果汁软糖",
+      "sellpoints_en": "99% restored juice; peelable double‑layer fun.",
+      "sellpoints_zh": "99%还原果汁风味，可剥双层口感。",
+      "weight": "75g",
+      "pack": "48 bags/carton",
+      "shelf": "12 months",
+      "ean": "4897113203307",
+      "image": "assets/img/placeholder.png"
+    },
+    {
+      "category": "Lollipop",
+      "name_en": "0 Sugar Fat‑Free Lollipop",
+      "name_zh": "0糖0脂棒棒糖",
+      "sellpoints_en": "Isomalt base; ultra‑low calorie; tooth‑friendly.",
+      "sellpoints_zh": "异麦芽糖醇基底，低卡护牙。",
+      "weight": "10g",
+      "pack": "50 pcs / 4 inners/carton",
+      "shelf": "12 months",
+      "ean": "—",
+      "image": "assets/img/placeholder.png"
+    },
+    {
+      "category": "Lollipop",
+      "name_en": "Audio “Confession” Lollipop (Bone Conduction)",
+      "name_zh": "告白棒棒糖（骨传导）",
+      "sellpoints_en": "Private listening via teeth; record blessings or love notes.",
+      "sellpoints_zh": "齿间私享音乐，可录祝福或告白。",
+      "weight": "18g (1 pc / box)",
+      "pack": "8 pcs / 12 boxes/carton",
+      "shelf": "12 months",
+      "ean": "4897113208265",
+      "image": "assets/img/placeholder.png"
+    },
+    {
+      "category": "Gift",
+      "name_en": "Lollipop Gift Boxes — Princess Series",
+      "name_zh": "棒棒糖礼盒—公主系列",
+      "sellpoints_en": "Giftable themed sets for birthdays and holidays.",
+      "sellpoints_zh": "适合生日与节日赠礼的主题礼盒。",
+      "weight": "60–125g",
+      "pack": "20–24 boxes/carton",
+      "shelf": "12 months",
+      "ean": "—",
+      "image": "assets/img/placeholder.png"
+    }
+  ]
+}

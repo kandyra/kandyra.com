@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kandyra — The New Concept of Healthy Candies</title>
+  <meta name="description" content="Kandyra: high‑appearance, healthy candies — 0 sugar, 0 fat options across marshmallows, gummies, and lollipops." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root { --brand:#FF5A3D; --brand-2:#FF8A00; }
+    body { font-family: 'Poppins', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, 'Noto Sans SC', 'Noto Sans', sans-serif; }
+    .pill { border-radius: 999px; }
+    .glass { backdrop-filter: blur(8px); background: rgba(255,255,255,.65); }
+    .grid-auto { grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
+    .lang-active { background: #111827; color: #fff; }
+  </style>
+</head>
+<body class="bg-white text-neutral-900">
+  <header class="sticky top-0 z-30 bg-white/90 border-b border-neutral-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <a href="#home" class="flex items-center gap-2">
+        <div class="w-8 h-8 rounded-2xl bg-[var(--brand)]"></div>
+        <span class="font-bold text-xl tracking-wide" data-i18n="brand">Kandyra</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a class="hover:text-[var(--brand)]" href="#about" data-i18n="nav_brand">Brand</a>
+        <a class="hover:text-[var(--brand)]" href="#highlights" data-i18n="nav_high">Highlights</a>
+        <a class="hover:text-[var(--brand)]" href="#products" data-i18n="nav_products">Products</a>
+        <a class="hover:text-[var(--brand)]" href="#contact" data-i18n="nav_contact">Contact</a>
+      </nav>
+      <div class="flex items-center gap-2">
+        <button id="lang-en" class="pill border border-neutral-300 px-3 py-1.5 text-sm">EN</button>
+        <button id="lang-zh" class="pill border border-neutral-300 px-3 py-1.5 text-sm">中文</button>
+        <a href="#contact" class="pill bg-[var(--brand)] text-white px-4 py-2 text-sm font-semibold" data-i18n="cta_wholesale">Wholesale</a>
+      </div>
+    </div>
+  </header>
+
+  <section id="home" class="relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-b from-orange-50/80 to-white pointer-events-none"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 relative">
+      <div class="grid lg:grid-cols-2 gap-10 items-center">
+        <div>
+          <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight">
+            <span data-i18n="hero_1">The New Concept of</span> <span class="text-[var(--brand)]" data-i18n="hero_2">Healthy Candies</span>
+          </h1>
+          <p class="mt-4 text-neutral-700 text-lg" data-i18n="hero_sub">High‑appearance, better‑for‑you sweets featuring zero‑sugar / low‑sugar formulas, fluffy marshmallows, juicy gummies, and creative lollipops designed for sharing and gifting.</p>
+          <p class="mt-2 text-neutral-500" data-i18n="hero_tag">健康糖果新主张 · 高颜值 · 0糖/0脂 · 适合女生与儿童 · 节日礼赠佳选</p>
+          <div class="mt-6 flex flex-wrap gap-3">
+            <a href="#products" class="pill bg-neutral-900 text-white px-5 py-3 text-sm font-semibold" data-i18n="cta_browse">Browse Products</a>
+            <a href="#contact" class="pill border border-neutral-300 px-5 py-3 text-sm font-semibold" data-i18n="cta_become">Become a Distributor</a>
+          </div>
+        </div>
+        <div class="relative">
+          <div class="absolute -top-10 -right-10 w-72 h-72 rounded-full bg-orange-200/40 blur-3xl"></div>
+          <div class="absolute -bottom-14 -left-8 w-60 h-60 rounded-full bg-pink-200/40 blur-3xl"></div>
+          <div class="relative glass rounded-3xl p-6 shadow-xl">
+            <div class="grid grid-cols-3 gap-3">
+              <img src="assets/img/hero1.png" alt="Kandyra candy" class="aspect-square object-cover rounded-2xl"/>
+              <img src="assets/img/hero2.png" alt="Kandyra candy" class="aspect-square object-cover rounded-2xl"/>
+              <img src="assets/img/hero3.png" alt="Kandyra candy" class="aspect-square object-cover rounded-2xl"/>
+              <img src="assets/img/hero4.png" alt="Kandyra candy" class="aspect-square object-cover rounded-2xl"/>
+              <img src="assets/img/hero5.png" alt="Kandyra candy" class="aspect-square object-cover rounded-2xl"/>
+              <img src="assets/img/hero6.png" alt="Kandyra candy" class="aspect-square object-cover rounded-2xl"/>
+            </div>
+            <p class="mt-4 text-sm text-neutral-600" data-i18n="hero_note">* Placeholder images — replace with real pack shots under /assets/img/.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="highlights" class="py-14">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl sm:text-3xl font-bold" data-i18n="why_title">Why Kandyra</h2>
+      <div class="mt-6 grid md:grid-cols-3 gap-6">
+        <div class="p-6 rounded-2xl border border-neutral-200">
+          <div class="text-sm font-semibold text-[var(--brand)]" data-i18n="hi_1_k">Health‑forward</div>
+          <h3 class="text-lg font-semibold mt-1" data-i18n="hi_1_t">0 sugar / 0 fat options</h3>
+          <p class="text-neutral-600 mt-2" data-i18n="hi_1_d">Isomalt‑based lollipops and low‑sugar formulations keep sweetness light and teeth‑friendly.</p>
+        </div>
+        <div class="p-6 rounded-2xl border border-neutral-200">
+          <div class="text-sm font-semibold text-[var(--brand)]" data-i18n="hi_2_k">Design‑led</div>
+          <h3 class="text-lg font-semibold mt-1" data-i18n="hi_2_t">3D/4D shapes & giftable packs</h3>
+          <p class="text-neutral-600 mt-2" data-i18n="hi_2_d">Roses, bears, pandas, space themes — high‑appearance candies for parties and gifting.</p>
+        </div>
+        <div class="p-6 rounded-2xl border border-neutral-200">
+          <div class="text-sm font-semibold text-[var(--brand)]" data-i18n="hi_3_k">Quality</div>
+          <h3 class="text-lg font-semibold mt-1" data-i18n="hi_3_t">Fresh, soft, non‑sticky</h3>
+          <p class="text-neutral-600 mt-2" data-i18n="hi_3_d">Fluffy marshmallows; juicy, peelable gummies; crisp lollipops — all with long shelf life.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="products" class="py-14 bg-neutral-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-end justify-between gap-4">
+        <h2 class="text-2xl sm:text-3xl font-bold" data-i18n="products_title">Featured Products</h2>
+        <div class="flex gap-2 text-sm">
+          <button id="filterAll" class="pill px-3 py-1.5 border border-neutral-300" data-i18n="filter_all">All</button>
+          <button data-tag="Marshmallow" class="tag pill px-3 py-1.5 border border-neutral-300">Marshmallow</button>
+          <button data-tag="Gummy" class="tag pill px-3 py-1.5 border border-neutral-300">Gummy</button>
+          <button data-tag="Lollipop" class="tag pill px-3 py-1.5 border border-neutral-300">Lollipop</button>
+          <button data-tag="Gift" class="tag pill px-3 py-1.5 border border-neutral-300">Gift</button>
+        </div>
+      </div>
+
+      <div id="productGrid" class="mt-8 grid grid-auto gap-6"></div>
+
+      <template id="cardTpl">
+        <article class="bg-white rounded-2xl border border-neutral-200 overflow-hidden flex flex-col">
+          <img data-img alt="Kandyra product" class="aspect-[4/3] object-cover bg-neutral-100"/>
+          <div class="p-5 flex-1 flex flex-col">
+            <div class="text-[10px] uppercase tracking-widest text-[var(--brand)] font-bold" data-cat></div>
+            <h3 class="mt-1 text-lg font-semibold" data-name></h3>
+            <p class="mt-2 text-sm text-neutral-600" data-sellpoints></p>
+            <dl class="mt-4 grid grid-cols-2 gap-3 text-xs text-neutral-600">
+              <div><dt class="font-semibold" data-i18n="spec_weight">Net Weight</dt><dd data-weight>-</dd></div>
+              <div><dt class="font-semibold" data-i18n="spec_pack">Packing</dt><dd data-pack>-</dd></div>
+              <div><dt class="font-semibold" data-i18n="spec_shelf">Shelf Life</dt><dd data-shelf>-</dd></div>
+              <div><dt class="font-semibold">EAN</dt><dd data-ean>-</dd></div>
+            </dl>
+            <div class="mt-4 flex gap-2">
+              <a class="pill bg-neutral-900 text-white px-3 py-1.5 text-xs" data-cta="inquiry" href="#contact" data-i18n="cta_wholesale_small">Wholesale Inquiry</a>
+              <a class="pill border border-neutral-300 px-3 py-1.5 text-xs" data-cta="spec" href="#contact" data-i18n="cta_specs">Specs Sheet</a>
+            </div>
+          </div>
+        </article>
+      </template>
+    </div>
+  </section>
+
+  <section id="about" class="py-14">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl sm:text-3xl font-bold" data-i18n="brand_title">Brand Story</h2>
+      <p class="mt-4 text-neutral-700" data-i18n="brand_p1">Kandyra crafts creative, gift‑ready sweets that balance looks and taste. From peelable 4D juice gummies to 3D rose marshmallows and space‑themed lollipops, our portfolio brings joy to birthdays, dates, and everyday treats — with better‑for‑you formulas and reliable shelf life for retail partners.</p>
+      <ul class="mt-6 grid md:grid-cols-2 gap-4 text-sm text-neutral-700 list-disc pl-5">
+        <li data-i18n="brand_b1">High appearance: 3D/4D shapes (rose, bear, panda, swan, space).</li>
+        <li data-i18n="brand_b2">Health highlights: 0 sugar / 0 fat options; isomalt lollipops.</li>
+        <li data-i18n="brand_b3">Fun formats: peelable, burst, musical & bone‑conduction lollipops.</li>
+        <li data-i18n="brand_b4">Retail‑ready specs: individual packs, gift boxes, clear EANs.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact" class="py-16 bg-neutral-900 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-10 items-start">
+        <div>
+          <h2 class="text-2xl sm:text-3xl font-bold" data-i18n="contact_title">Wholesale & Partnerships</h2>
+          <p class="mt-3 text-neutral-300" data-i18n="contact_sub">We welcome distributors, supermarkets, gift shops, and cafés to partner with us.</p>
+          <div class="mt-6 space-y-2 text-sm">
+            <p><span class="font-semibold" data-i18n="addr">Address</span>: <span>9779 Base Line Rd, Rancho Cucamonga, CA 91730</span></p>
+            <p><span class="font-semibold">Email</span>: <a class="underline" href="mailto:meixiaoyan75@gmail.com">meixiaoyan75@gmail.com</a></p>
+            <p><span class="font-semibold" data-i18n="phone">Phone</span>: <a class="underline" href="tel:+18202348631">+1 (820) 234‑8631</a></p>
+          </div>
+        </div>
+        <form action="https://formspree.io/f/xxxxabcd" method="POST" class="bg-white/5 rounded-2xl p-6 space-y-4">
+          <div class="grid sm:grid-cols-2 gap-4">
+            <label class="block text-sm">Company<input name="company" class="mt-1 w-full rounded-lg bg-white/10 border border-white/20 p-2" placeholder="Your company"/></label>
+            <label class="block text-sm" data-i18n-attr="placeholder:contact_name">Contact<input name="contact" class="mt-1 w-full rounded-lg bg-white/10 border border-white/20 p-2" placeholder="Your name"/></label>
+          </div>
+          <label class="block text-sm">Email<input name="email" type="email" class="mt-1 w-full rounded-lg bg-white/10 border border-white/20 p-2" placeholder="name@company.com"/></label>
+          <label class="block text-sm">Message<textarea name="message" class="mt-1 w-full rounded-lg bg-white/10 border border-white/20 p-2" rows="4" placeholder="Products of interest, order volume, destination…"></textarea></label>
+          <button type="submit" class="pill bg-white text-neutral-900 px-4 py-2 font-semibold" data-i18n="cta_send">Send Inquiry</button>
+          <p class="text-xs text-neutral-400" data-i18n="form_note">* Replace the form action with your Formspree endpoint to start receiving messages.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-10 text-center text-sm text-neutral-500">© <span id="year"></span> Kandyra. All rights reserved.</footer>
+
+  <script>
+    const I18N = {
+      en: {
+        brand: 'Kandyra',
+        nav_brand: 'Brand', nav_high: 'Highlights', nav_products: 'Products', nav_contact: 'Contact',
+        cta_wholesale: 'Wholesale', cta_browse: 'Browse Products', cta_become: 'Become a Distributor',
+        hero_1: 'The New Concept of', hero_2: 'Healthy Candies', hero_sub: 'High‑appearance, better‑for‑you sweets featuring zero‑sugar / low‑sugar formulas, fluffy marshmallows, juicy gummies, and creative lollipops designed for sharing and gifting.', hero_tag: '健康糖果新主张 · 高颜值 · 0糖/0脂 · 适合女生与儿童 · 节日礼赠佳选', hero_note: '* Placeholder images — replace with real pack shots under /assets/img/.',
+        why_title: 'Why Kandyra',
+        hi_1_k: 'Health‑forward', hi_1_t: '0 sugar / 0 fat options', hi_1_d: 'Isomalt‑based lollipops and low‑sugar formulations keep sweetness light and teeth‑friendly.',
+        hi_2_k: 'Design‑led', hi_2_t: '3D/4D shapes & giftable packs', hi_2_d: 'Roses, bears, pandas, space themes — high‑appearance candies for parties and gifting.',
+        hi_3_k: 'Quality', hi_3_t: 'Fresh, soft, non‑sticky', hi_3_d: 'Fluffy marshmallows; juicy, peelable gummies; crisp lollipops — all with long shelf life.',
+        products_title: 'Featured Products', filter_all: 'All',
+        spec_weight:'Net Weight', spec_pack:'Packing', spec_shelf:'Shelf Life',
+        brand_title: 'Brand Story', brand_p1: 'Kandyra crafts creative, gift‑ready sweets that balance looks and taste. From peelable 4D juice gummies to 3D rose marshmallows and space‑themed lollipops, our portfolio brings joy to birthdays, dates, and everyday treats — with better‑for‑you formulas and reliable shelf life for retail partners.',
+        brand_b1:'High appearance: 3D/4D shapes (rose, bear, panda, swan, space).', brand_b2:'Health highlights: 0 sugar / 0 fat options; isomalt lollipops.', brand_b3:'Fun formats: peelable, burst, musical & bone‑conduction lollipops.', brand_b4:'Retail‑ready specs: individual packs, gift boxes, clear EANs.',
+        contact_title:'Wholesale & Partnerships', contact_sub:'We welcome distributors, supermarkets, gift shops, and cafés to partner with us.', addr:'Address', phone:'Phone', cta_send:'Send Inquiry', cta_wholesale_small:'Wholesale Inquiry', cta_specs:'Specs Sheet'
+      },
+      zh: {
+        brand: 'Kandyra',
+        nav_brand: '品牌', nav_high: '亮点', nav_products: '产品', nav_contact: '联系',
+        cta_wholesale: '批发合作', cta_browse: '查看产品', cta_become: '成为渠道伙伴',
+        hero_1: '健康糖果新主张', hero_2: 'Kandyra', hero_sub: '高颜值、低负担的甜品：0糖/低糖配方；松软棉花糖、多汁软糖、创意棒棒糖，适合分享与礼赠。', hero_tag: '健康糖果新主张 · 高颜值 · 0糖/0脂 · 适合女生与儿童 · 节日礼赠佳选', hero_note: '＊当前为占位图，替换为 /assets/img/ 下的产品实拍图片。',
+        why_title: '为什么选择 Kandyra',
+        hi_1_k: '健康导向', hi_1_t: '0糖 / 0脂 选项', hi_1_d: '异麦芽糖醇棒棒糖、低糖配方，更轻甜更护牙。',
+        hi_2_k: '设计取胜', hi_2_t: '3D/4D 造型与礼盒', hi_2_d: '玫瑰、小熊、熊猫、太空等主题，高颜值聚会与送礼之选。',
+        hi_3_k: '品质口感', hi_3_t: '柔软不黏、鲜润回弹', hi_3_d: '棉花糖松软；果汁软糖 Q 弹可剥；棒棒糖清脆，保质期稳定。',
+        products_title: '主打产品', filter_all: '全部',
+        spec_weight:'净含量', spec_pack:'装箱规格', spec_shelf:'保质期',
+        brand_title: '品牌故事', brand_p1: 'Kandyra 打造兼顾颜值与口感的创意糖果：可剥 4D 果汁软糖、3D 玫瑰棉花糖、太空主题棒棒糖等，为生日、约会与日常小确幸带来惊喜，同时兼顾更低负担与零售友好的规格。',
+        brand_b1:'高颜值：3D/4D 立体造型（玫瑰/小熊/熊猫/天鹅/太空）。', brand_b2:'健康亮点：0糖/0脂；异麦芽糖醇棒棒糖。', brand_b3:'趣味形态：可剥、爆汁、音乐与骨传导棒棒糖。', brand_b4:'上架友好：单独小包装、礼盒、多种 EAN。',
+        contact_title:'批发与渠道合作', contact_sub:'欢迎经销商、超市、礼品店、咖啡店等合作。', addr:'地址', phone:'电话', cta_send:'发送询盘', cta_wholesale_small:'批发询盘', cta_specs:'规格单'
+      }
+    };
+
+    let currentLang = 'en';
+    const $ = (sel) => document.querySelector(sel);
+
+    function applyLang(lang){
+      currentLang = lang;
+      $('#lang-en').classList.toggle('lang-active', lang==='en');
+      $('#lang-zh').classList.toggle('lang-active', lang==='zh');
+      document.querySelectorAll('[data-i18n]').forEach(el=>{
+        const key = el.getAttribute('data-i18n');
+        el.textContent = I18N[lang][key] || el.textContent;
+      });
+      document.querySelectorAll('[data-i18n-attr]').forEach(el=>{
+        const map = el.getAttribute('data-i18n-attr').split(',');
+        map.forEach(pair=>{
+          const [attr, key] = pair.split(':');
+          if(I18N[lang][key]) el.setAttribute(attr, I18N[lang][key]);
+        });
+      });
+      renderProducts(window.__ALL_PRODUCTS__);
+    }
+
+    document.getElementById('lang-en').addEventListener('click', ()=>applyLang('en'));
+    document.getElementById('lang-zh').addEventListener('click', ()=>applyLang('zh'));
+
+    const grid = document.getElementById('productGrid');
+    const tpl = document.getElementById('cardTpl');
+
+    function renderProducts(list){
+      if(!list) return;
+      grid.innerHTML = '';
+      list.forEach(p => {
+        const node = tpl.content.cloneNode(true);
+        node.querySelector('[data-cat]').textContent = p.category;
+        node.querySelector('[data-name]').textContent = (currentLang==='zh' ? (p.name_zh || p.name_en) : p.name_en);
+        node.querySelector('[data-sellpoints]').textContent = (currentLang==='zh' ? (p.sellpoints_zh || p.sellpoints_en) : p.sellpoints_en);
+        node.querySelector('[data-weight]').textContent = p.weight || '-';
+        node.querySelector('[data-pack]').textContent = p.pack || '-';
+        node.querySelector('[data-shelf]').textContent = p.shelf || '-';
+        node.querySelector('[data-ean]').textContent = p.ean || '-';
+        node.querySelector('[data-img]').src = p.image || 'assets/img/placeholder.png';
+        node.querySelector('[data-img]').alt = p.name_en;
+        grid.appendChild(node);
+      });
+    }
+
+    const allBtn = document.getElementById('filterAll');
+    const tagBtns = Array.from(document.querySelectorAll('.tag'));
+    allBtn.addEventListener('click', () => renderProducts(window.__ALL_PRODUCTS__));
+    tagBtns.forEach(btn => btn.addEventListener('click', () => {
+      const tag = btn.getAttribute('data-tag');
+      renderProducts(window.__ALL_PRODUCTS__.filter(p => p.category === tag));
+    }));
+
+    fetch('products.json').then(r=>r.json()).then(data=>{
+      window.__ALL_PRODUCTS__ = data.products;
+      renderProducts(data.products);
+    });
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+    applyLang('en');
+  </script>
+</body>
+</html>
